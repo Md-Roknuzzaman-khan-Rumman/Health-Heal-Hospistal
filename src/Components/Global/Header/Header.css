@@ -12,7 +12,7 @@
 }
 
 .logo {
-	width : 40%;
+	width : 30%;
 }
 
 .logo img {
@@ -20,7 +20,7 @@
 }
 
 .navLinks {
-	width : 48%;
+	width : 58%;
 }
 
 
@@ -31,13 +31,11 @@
 	margin-left : 54px;
 	color       : white;
 	font-size   : 20px;
-	transition: .5s ease all;
+	transition: all .5s ease;
 }
 
 .navLinks ul li:hover {
-	background-color: #4ebcff;
-	color: black;
-	border-radius: 20px;
+	border-bottom: 2px solid #1597E5;
 	padding: 2px 0;
 }
 

@@ -1,11 +1,11 @@
 import React from 'react';
 
 const ContactUs = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+	return (
+		<div>
+
+		</div>
+	);
 };
 
 export default ContactUs;

@@ -1,0 +1,87 @@
+.home_doctors_title {
+	color      : #1597E5;
+	font-size  : 50px;
+	padding    : 70px;
+	text-align : center;
+}
+
+.home_doctors_moto {
+	color      : #1597E5;
+	font-size  : 20px;
+	margin     : 10px auto;
+	text-align : center;
+	width      : 90%;
+}
+
+.home_doctors_container {
+	display         : flex;
+	justify-content : space-around;
+}
+
+.home_doctor {
+	border        : 1px solid #1597E5;
+	border-radius : 20px;
+	height        : auto;
+	margin        : 0 0 50px 0;
+	overflow      : hidden;
+	transition    : all .5s ease;
+	width         : 28%;
+}
+
+.home_doctor:hover {
+	box-shadow : 10px 10px 10px rgba(0, 0, 0, 0.47);
+	transform  : translate(-10px, -10px);
+}
+
+.doctor_image {
+	background-position : center -20px;
+	background-repeat   : no-repeat;
+	background-size     : cover;
+	height              : 300px;
+	width               : 100%;
+}
+
+.doctor_title, .doctor_category, .doctor_phone {
+	padding : 10px 20px;
+}
+
+.doctor_title {
+	color     : #00b9cf;
+	font-size : 30px;
+}
+
+.doctor_category {
+	font-size : 20px;
+}
+
+.doctor_phone {
+	font-size : 18px;
+}
+
+button {
+	background-color : #00b9cf;
+	border           : none;
+	border-radius    : 20px;
+	color            : white;
+	font-size        : 20px;
+	margin           : 0 0 20px 20px;
+	padding          : 10px 20px;
+}
+
+@media screen and (max-width : 1100px) {
+	.home_doctors_container {
+		display : block;
+	}
+	
+	.home_doctor {
+		margin : 0 auto 50px auto;
+		width  : 55%;
+	}
+}
+
+@media screen and (max-width : 600px) {
+	.home_doctor {
+		margin : 0 auto 50px auto;
+		width  : 90%;
+	}
+}

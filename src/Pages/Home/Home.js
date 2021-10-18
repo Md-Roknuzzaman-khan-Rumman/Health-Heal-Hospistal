@@ -7,16 +7,16 @@ import HomeDoctors from "../../Components/Home/HomeDoctors/HomeDoctors";
 import HomeBlogs from "../../Components/Home/HomeBlogs/HomeBlogs";
 
 const Home = () => {
-    return (
-        <div>
-            <Header/>
-            <Banner/>
-            <HomeServices/>
-            <HomeDoctors/>
-            <HomeBlogs/>
-            <Footer/>
-        </div>
-    );
+	return (
+		<div>
+			<Header />
+			<Banner />
+			<HomeServices />
+			<HomeDoctors />
+			<HomeBlogs />
+			<Footer />
+		</div>
+	);
 };
 
 export default Home;

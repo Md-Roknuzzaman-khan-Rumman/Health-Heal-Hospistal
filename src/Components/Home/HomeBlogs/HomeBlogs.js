@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import "./HomeBlogs.css"
+import {Link} from "react-router-dom";
 
 const HomeBlogs = () => {
 	const [Blogs, setBlogs] = useState([]);
@@ -35,7 +36,7 @@ const HomeBlog = (props) => {
 			<div>
 				<h2 className="blog_title">{title}</h2>
 				<p className=" blog">{blog}</p>
-				<a href="" className="more">More</a>
+				<Link to="./ourBlogs">More</Link>
 			</div>
 		</div>
 	);

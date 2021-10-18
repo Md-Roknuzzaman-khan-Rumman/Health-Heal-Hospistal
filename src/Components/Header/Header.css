@@ -5,11 +5,6 @@
 	background-color : #1597E5;
 }
 
-.container {
-	width  : 90%;
-	margin : 0 auto;
-}
-
 .nav_d-flex {
 	display         : flex;
 	justify-content : space-between;

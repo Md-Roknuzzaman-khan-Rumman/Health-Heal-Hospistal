@@ -4,7 +4,7 @@ import ALlMain from "./AllMain/AllMain";
 function App() {
     return (
         <div className="App">
-            <ALlMain/>
+            <ALlMain />
         </div>
     );
 }

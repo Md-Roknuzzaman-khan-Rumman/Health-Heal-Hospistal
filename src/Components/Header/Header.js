@@ -1,4 +1,5 @@
 import React from 'react';
+import "../../AllMain/AllMain.css"
 import "./Header.css"
 import logo from "../../images/logo.png"
 

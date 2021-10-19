@@ -10,6 +10,12 @@ import Header from "../Components/Global/Header/Header";
 import Footer from "../Components/Global/Footer/Footer";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import NotFound from "../Pages/NotFound/NotFound";
+// import {initializeApp} from "firebase/firebase-app";
+// import {GoogleAuthProvider} from "firebase/firebase-auth";
+//
+// initializeApp();
+// const googleProvider = new GoogleAuthProvider();
 
 const ALlMain = () => {
 	return (
@@ -17,35 +23,35 @@ const ALlMain = () => {
 			<Router>
 				<Header />
 				<Switch>
-					<Route path="/login">
+					<Route path = "/login">
 						<Login />
 					</Route>
-					<Route path="/register">
+					<Route path = "/register">
 						<Register />
 					</Route>
-					<Route path="/home">
+					<Route path = "/home">
 						<Home />
 					</Route>
-					<Route path="/aboutUs">
+					<Route path = "/aboutUs">
 						<AboutUs />
 					</Route>
-					<Route path="/services">
+					<Route path = "/services">
 						<Services />
 					</Route>
-					<Route path="/doctors">
+					<Route path = "/doctors">
 						<Doctors />
 					</Route>
-					<Route path="/contactUs">
+					<Route path = "/contactUs">
 						<ContactUs />
 					</Route>
-					<Route path="/ourBlogs">
+					<Route path = "/ourBlogs">
 						<OurBlogs />
 					</Route>
-					<Route exact path="/">
+					<Route exact path = "/">
 						<Home />
 					</Route>
-					<Route path="*">
-					
+					<Route path = "*">
+						<NotFound />
 					</Route>
 				</Switch>
 				<Footer />

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import "./Services.css"
 import "../../Components/Home/HomeServices/HomeServices.css"
+import {Link} from "react-router-dom";
 
 const Services = () => {
 	const [services, setServices] = useState([]);
@@ -12,11 +13,11 @@ const Services = () => {
 	
 	return (
 		<div>
-			<div className="container">
-				<h1 className="services_title">Our Services</h1>
-				<div className="services_container">
+			<div className = "container">
+				<h1 className = "services_title">Our Services</h1>
+				<div className = "services_container">
 					{
-						services.map(service => <Service key={service.id} service={service} />)
+						services.map(service => <Service key = {service.id} service = {service} />)
 					}
 				</div>
 			</div>
@@ -25,14 +26,16 @@ const Services = () => {
 };
 
 const Service = (props) => {
-	const {title, img, description} = props.service;
+	const {id, title, img, description} = props.service;
 	return (
-		<div className="service">
+		<div className = "service">
 			<div>
-				<img src={img} alt="" className="service_image" />
-				<h2 className="service_title">{title}</h2>
-				<p className="service_description">{description}</p>
-				<button>Details</button>
+				<img src = {img} alt = "" className = "service_image" />
+				<h2 className = "service_title">{title}</h2>
+				<p className = "service_description">{description}</p>
+				<Link to = {`/service/${id}`}>
+					<button>Details</button>
+				</Link>
 			</div>
 		</div>
 	);

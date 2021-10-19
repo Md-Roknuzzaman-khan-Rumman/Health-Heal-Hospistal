@@ -6,15 +6,15 @@ const HomeServices = () => {
 	const [services, setServices] = useState([]);
 	useEffect(() => {
 		fetch("./services.json")
-			.then(res => res.json())
-			.then(data => setServices(data.slice(0, 3)))
+		.then(res => res.json())
+		.then(data => setServices(data.slice(0, 3)))
 	}, []);
-
+	
 	return (
 		<div>
 			<div className="container">
-				<h1 className="home_services_title">Our Services</h1>
-				<div className="home_service_container">
+				<h1 className="services_title">Our Services</h1>
+				<div className="services_container">
 					{
 						services.map(service => <HomeService key={service.id} service={service} />)
 					}
@@ -27,7 +27,7 @@ const HomeServices = () => {
 const HomeService = (props) => {
 	const {title, img, description} = props.service;
 	return (
-		<div className="home_service">
+		<div className="service">
 			<div>
 				<img src={img} alt="" className="service_image" />
 				<h2 className="service_title">{title}</h2>

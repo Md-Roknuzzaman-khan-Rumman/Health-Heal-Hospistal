@@ -9,12 +9,10 @@ const Footer = () => {
 	const twitter = <FontAwesomeIcon icon={faTwitter} />
 	const twitch = <FontAwesomeIcon icon={faTwitch} />
 	const googlePlus = <FontAwesomeIcon icon={faGooglePlusSquare} />
-	// const twitter =
-
+	
 	return (
 		<div>
 			<footer>
-
 				<div className="container">
 					<section className="footerInfos">
 						<div>

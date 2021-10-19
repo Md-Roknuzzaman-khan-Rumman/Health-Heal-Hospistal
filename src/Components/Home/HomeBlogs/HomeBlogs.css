@@ -1,18 +1,18 @@
-.home_blogs_title, .home_blogs_moto {
+.blogs_title, .blogs_moto {
 	text-align : center;
 }
 
-.home_blogs_title {
+.blogs_title {
 	color  : #1597E5;
 	margin : 20px 0 0 0;
 }
 
-.home_blogs_moto {
+.blogs_moto {
 	font-size : 18px;
 	margin    : 0 0 20px 0;
 }
 
-.home_blog {
+.blog {
 	border-bottom : 1px solid black;
 	margin        : 0 0 50px 0;
 }

@@ -13,13 +13,13 @@ const HomeBlogs = () => {
 	return (
 		<div>
 			<div className="container">
-				<h1 className="home_blogs_title">Latest News & Our Blog</h1>
-				<p className="home_blogs_moto">
+				<h1 className="blogs_title">Latest News & Our Blog</h1>
+				<p className="blogs_moto">
 					Sed doming virtute honestatis at, graece tamquam docendi eum an,
 					alterum reformidans est ei nec aliquando voluptatum an, eu quidam
 					civibus qui
 				</p>
-				<div className="home_blogs_container">
+				<div className="blogs_container">
 					{
 						Blogs.map(blog => <HomeBlog key={blog.id} blog={blog} />)
 					}
@@ -32,11 +32,11 @@ const HomeBlogs = () => {
 const HomeBlog = (props) => {
 	const {title, blog} = props.blog;
 	return (
-		<div className="home_blog">
+		<div className="blog">
 			<div>
 				<h2 className="blog_title">{title}</h2>
-				<p className=" blog">{blog}</p>
-				<Link to="./ourBlogs">More</Link>
+				<p className="blog_blog">{blog}</p>
+				<Link to="./ourBlogs" className="more">More</Link>
 			</div>
 		</div>
 	);

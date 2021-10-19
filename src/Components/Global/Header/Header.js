@@ -71,9 +71,19 @@ const Header = () => {
 							</NavLink>
 						</ul>
 					</nav>
+					
 					<div className="signedOption">
 						<div className="signInfo">
-							<p>Signned As:</p>
+							<NavLink
+								to="/login"
+								activeStyle={{
+									borderBottom: "2px solid #157E5",
+									fontWeight: "bold",
+									color: "white"
+								}} className="nav_link">
+								Login
+							</NavLink>
+							
 							<p>Rumman</p>
 						</div>
 						<div className="signImg">

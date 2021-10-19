@@ -8,6 +8,8 @@ import ContactUs from "../Pages/ContactUs/ContactUs";
 import OurBlogs from "../Pages/OurBlogs/OurBlogs";
 import Header from "../Components/Global/Header/Header";
 import Footer from "../Components/Global/Footer/Footer";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
 
 const ALlMain = () => {
 	return (
@@ -15,6 +17,12 @@ const ALlMain = () => {
 			<Router>
 				<Header />
 				<Switch>
+					<Route path="/login">
+						<Login />
+					</Route>
+					<Route path="/register">
+						<Register />
+					</Route>
 					<Route path="/home">
 						<Home />
 					</Route>

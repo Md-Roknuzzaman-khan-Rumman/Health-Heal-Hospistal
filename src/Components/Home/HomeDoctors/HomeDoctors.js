@@ -12,14 +12,14 @@ const HomeDoctors = () => {
 	return (
 		<div>
 			<div className="container">
-				<h1 className="home_doctors_title">Our Doctors</h1>
-				<p className="home_doctors_moto">
+				<h1 className="doctors_title">Our Doctors</h1>
+				<p className="doctors_moto">
 					The wise man therefore always holds in these matters to this principle
 					of selection he rejects pleasures to secure other greater pleasures, or
 					else he endures pains
 					to avoid worse pains
 				</p>
-				<div className="home_doctors_container">
+				<div className="doctors_container">
 					{
 						Doctors.map(doctor => <HomeDoctor key={doctor.id} doctor={doctor} />)
 					}
@@ -35,7 +35,7 @@ const HomeDoctor = (props) => {
 		backgroundImage: `url('${img}')`
 	};
 	return (
-		<div className="home_doctor">
+		<div className="doctor">
 			<div>
 				<div style={doctorImg} className="doctor_image" />
 				<h2 className="doctor_title">{name}</h2>

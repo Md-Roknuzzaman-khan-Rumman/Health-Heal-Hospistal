@@ -1,6 +1,12 @@
 import {useEffect, useState} from "react";
 import initializeAuthentication from "../Firebase/firebase.init";
-import {getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut} from "firebase/auth";
+import {
+	getAuth,
+	GoogleAuthProvider,
+	signInWithPopup,
+	onAuthStateChanged,
+	signOut
+} from "firebase/auth";
 
 initializeAuthentication();
 
@@ -36,3 +42,5 @@ const useFirebase = () => {
 }
 
 export default useFirebase;
+
+

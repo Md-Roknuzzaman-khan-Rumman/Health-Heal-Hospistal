@@ -76,8 +76,6 @@ const Header = () => {
 					
 					<div className = "signedOption">
 						<div className = "signInfo">
-							
-							
 							{user?.email ?
 								<div className = "whenSignedIn">
 									<NavLink to = "/login" activeStyle = {{
@@ -85,13 +83,12 @@ const Header = () => {
 										fontWeight: "bold",
 										color: "white"
 									}} className = "nav_link">
-										<button onClick = {logout}>Logout</button>
-									
+										<button onClick = {logout} className = "whenSignedIn">Logout</button>
 									</NavLink>
 									<div className = "signImg">
 										<img src = {(user?.photoURL)} alt = "" className = "profilePic" />
+										<p>{user.displayName} < /p>
 									</div>
-									<p>{user.displayName} < /p>
 								</div>
 								:
 								<NavLink to = "/login" activeStyle = {{

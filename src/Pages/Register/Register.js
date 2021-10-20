@@ -9,9 +9,10 @@ const Register = () => {
 		<div>
 			<section className = "login">
 				<p className = "login_title">Register</p>
+				<input type = "text" placeholder = "Your Name" className = "loginEmail" /> <br />
 				<input type = "text" placeholder = "Your Email" className = "loginEmail" /> <br />
 				<input type = "password" placeholder = "Your Password" className = "loginPass" /> <br />
-				<button>Register</button>
+				<button className = "serviceButton">Register</button>
 				<p className = "isRegi">Already Logged In! <Link to = "/login">Login</Link></p>
 				<div className = "logged_via_container">
 					<p className = "login_via">{google}<span>oogle</span></p>

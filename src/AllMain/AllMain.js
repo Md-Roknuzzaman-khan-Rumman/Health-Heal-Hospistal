@@ -33,6 +33,9 @@ const ALlMain = () => {
 					<Route path = "/services">
 						<Services />
 					</Route>
+					<Route path = "/services/:serviceId">
+					
+					</Route>
 					<Route path = "/doctors">
 						<Doctors />
 					</Route>

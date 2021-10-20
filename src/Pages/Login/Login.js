@@ -12,10 +12,12 @@ const Login = () => {
 				<p className = "login_title">Login</p>
 				<input type = "text" placeholder = "Your Email" className = "loginEmail" /> <br />
 				<input type = "password" placeholder = "Your Password" className = "loginPass" /> <br />
-				<button>Login</button>
+				<button className = "serviceButton">Login</button>
 				<p className = "is_regi">Not Logged In! <Link to = "/register">Register</Link></p>
 				<div className = "logged_via_container">
-					<p className = "login_via">{google}<span>oogle</span></p>
+					<button className = "googleSignInButton">
+						<p className = "login_via">{google}<span>oogle</span></p>
+					</button>
 				</div>
 			</section>
 		</div>

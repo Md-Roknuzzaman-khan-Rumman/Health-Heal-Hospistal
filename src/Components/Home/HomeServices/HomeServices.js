@@ -12,11 +12,11 @@ const HomeServices = () => {
 	
 	return (
 		<div>
-			<div className="container">
-				<h1 className="services_title">Our Services</h1>
-				<div className="services_container">
+			<div className = "container">
+				<h1 className = "services_title">Our Services</h1>
+				<div className = "services_container">
 					{
-						services.map(service => <HomeService key={service.id} service={service} />)
+						services.map(service => <HomeService key = {service.id} service = {service} />)
 					}
 				</div>
 			</div>
@@ -27,12 +27,12 @@ const HomeServices = () => {
 const HomeService = (props) => {
 	const {title, img, description} = props.service;
 	return (
-		<div className="service">
+		<div className = "service">
 			<div>
-				<img src={img} alt="" className="service_image" />
-				<h2 className="service_title">{title}</h2>
-				<p className="service_description">{description}</p>
-				<button>Details</button>
+				<img src = {img} alt = "" className = "service_image" />
+				<h2 className = "service_title">{title}</h2>
+				<p className = "service_description">{description}</p>
+				<button className = "serviceButton">Details</button>
 			</div>
 		</div>
 	);

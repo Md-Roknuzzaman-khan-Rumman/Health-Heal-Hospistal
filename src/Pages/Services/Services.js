@@ -35,7 +35,7 @@ const Service = (props) => {
 				<h2 className = "service_title">{title}</h2>
 				<p className = "service_description">{description}</p>
 				<Link to = {`/service/${id}`}>
-					<button>Details</button>
+					<button className = "serviceButton">Details</button>
 				</Link>
 			</div>
 		</div>

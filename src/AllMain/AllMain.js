@@ -11,53 +11,46 @@ import Footer from "../Components/Global/Footer/Footer";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import NotFound from "../Pages/NotFound/NotFound";
-import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
-import AuthProvider from "../contexts/AuthProvider";
 
 const ALlMain = () => {
 	return (
 		<div>
-			<AuthProvider>
-				<Router>
-					<Header />
-					<Switch>
-						<Route path = "/login">
-							<Login />
-						</Route>
-						<Route path = "/register">
-							<Register />
-						</Route>
-						<Route path = "/home">
-							<Home />
-						</Route>
-						<Route path = "/aboutUs">
-							<AboutUs />
-						</Route>
-						<Route path = "/services">
-							<Services />
-						</Route>
-						<Route path = "/service/:serviceId">
-							<ServiceDetails />
-						</Route>
-						<Route path = "/doctors">
-							<Doctors />
-						</Route>
-						<Route path = "/contactUs">
-							<ContactUs />
-						</Route>
-						<Route path = "/ourBlogs">
-							<OurBlogs />
-						</Route>
-						<Route exact path = "/">
-							<Home />
-						</Route>
-						<Route path = "*">
-							<NotFound />
-						</Route>
-					</Switch>
-					<Footer />
-				</Router>
-			</AuthProvider>
+			<Router>
+				<Header />
+				<Switch>
+					<Route path = "/login">
+						<Login />
+					</Route>
+					<Route path = "/register">
+						<Register />
+					</Route>
+					<Route path = "/home">
+						<Home />
+					</Route>
+					<Route path = "/aboutUs">
+						<AboutUs />
+					</Route>
+					<Route path = "/services">
+						<Services />
+					</Route>
+					<Route path = "/doctors">
+						<Doctors />
+					</Route>
+					<Route path = "/contactUs">
+						<ContactUs />
+					</Route>
+					<Route path = "/ourBlogs">
+						<OurBlogs />
+					</Route>
+					<Route exact path = "/">
+						<Home />
+					</Route>
+					<Route path = "*">
+						<NotFound />
+					</Route>
+				</Switch>
+				<Footer />
+			</Router>
 		</div>
 	)
 };

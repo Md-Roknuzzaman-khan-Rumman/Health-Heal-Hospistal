@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import "./Services.css"
-import "../../Components/Home/HomeServices/HomeServices.css"
+import "./Services.css";
+import "../../Components/Home/HomeServices/HomeServices.css";
 import {Link} from "react-router-dom";
 
 const Services = () => {
@@ -9,6 +9,7 @@ const Services = () => {
 		fetch("./services.json")
 		.then(res => res.json())
 		.then(data => setServices(data))
+		
 	}, []);
 	
 	return (

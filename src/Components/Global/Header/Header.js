@@ -3,10 +3,10 @@ import "../../../AllMain/AllMain.css"
 import "./Header.css"
 import logo from "../../../images/logo.png"
 import {NavLink} from "react-router-dom";
-import useFirebase from "../../../Hooks/useFirebase";
+import useAuth from "../../../Hooks/useAuth";
 
 const Header = () => {
-	const {user, logout} = useFirebase();
+	const {user, logout} = useAuth();
 	return (
 		<header>
 			<div className = "navbar">

@@ -1,12 +1,21 @@
 import React from 'react';
 import "./Login.css"
-import {Link} from "react-router-dom";
+import {Link, useHistory, useLocation} from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGoogle} from '@fortawesome/free-brands-svg-icons';
-import useFirebase from "../../Hooks/useFirebase";
+import useAuth from "../../Hooks/useAuth";
 
 const Login = () => {
-	const {signInUsingGoogle} = useFirebase();
+	const {signInUsingGoogle} = useAuth();
+	const location = useLocation();
+	const history = useHistory();
+	const redirect_url = location.state?.from || "/home";
+	const handleGoogleLogin = () => {
+		signInUsingGoogle()
+		.then(result => {
+			history.push(redirect_url);
+		})
+	}
 	const google = <FontAwesomeIcon icon = {faGoogle} />
 	return (
 		<div>
@@ -17,7 +26,7 @@ const Login = () => {
 				<button className = "serviceButton">Login</button>
 				<p className = "is_regi">Not Logged In! <Link to = "/register">Register</Link></p>
 				<div className = "logged_via_container">
-					<button className = "googleSignInButton" onClick = {signInUsingGoogle}>
+					<button className = "googleSignInButton" onClick = {handleGoogleLogin}>
 						<p className = "login_via">{google}<span>oogle</span></p>
 					</button>
 				</div>

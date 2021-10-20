@@ -11,6 +11,7 @@ import Footer from "../Components/Global/Footer/Footer";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import NotFound from "../Pages/NotFound/NotFound";
+import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 
 const ALlMain = () => {
 	return (
@@ -33,8 +34,8 @@ const ALlMain = () => {
 					<Route path = "/services">
 						<Services />
 					</Route>
-					<Route path = "/services/:serviceId">
-					
+					<Route path = "/service/:serviceId">
+						<ServiceDetails />
 					</Route>
 					<Route path = "/doctors">
 						<Doctors />

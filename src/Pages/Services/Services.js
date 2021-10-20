@@ -33,7 +33,7 @@ const Service = (props) => {
 				<img src = {img} alt = "" className = "service_image" />
 				<h2 className = "service_title">{title}</h2>
 				<p className = "service_description">{description}</p>
-				<Link to = {`/friends/${id}`}>
+				<Link to = {`/service/${id}`}>
 					<button>Details</button>
 				</Link>
 			</div>
